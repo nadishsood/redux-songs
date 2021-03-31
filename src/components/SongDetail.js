@@ -19,7 +19,6 @@ const SongDetail=({mySelectedSong})=>{
         </div>
     )
 }
-
 const mapStateToProps=(state)=>{
     return { mySelectedSong: state.selectedSong }
 };
