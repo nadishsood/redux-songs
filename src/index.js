@@ -14,7 +14,7 @@ ReactDOM.render(
 
 
 
-//createStore takes in the combined reducers and it returned back a redux store and all of our
+//createStore takes in the combined reducers and it returnes back a redux store and all of our
 // application data and state
 
 //in our codepen, we got a reference to object created by createstore and we played around with it. 
@@ -26,3 +26,4 @@ ReactDOM.render(
 //any component in the heirarchy can make use of the connect and communicate with the provider and
 //make use of the data inside the redux store
 
+ 

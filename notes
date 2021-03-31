@@ -57,5 +57,17 @@ simple function, there's nothing special about it such that redux will pick it a
 to all reducers, therefore it is important to connect it to redux using connect. It will be dispatched, 
 it may change state and so on. 
 
-when we pass our aciton creator to our connect function, it assigns it to a new function and when thatfunciton is called, it returns an action
+when we pass our action creator to our connect function, it assigns it to a new function and when that function is called, it returns an action
 and the action is automatically dispatched to all the reducers. 
+
+
+final note: 
+in a component, the state exists from the reducer which in turn is in touch with the store. 
+this is used in mapstate toprops to give the component access to the data. 
+for a state to change, the component performs an action which is wired to it through connect. When this action is called with some data from the component, 
+it goes to reducers, the state changes and since connect is looking for state changes on the provider, the component re renders with the new data. 
+
+So a component needs data which it gets through the map StatetoProps and connect and it has access to some action creators which are again wired to the component through connect. 
+
+
+

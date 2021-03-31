@@ -27,5 +27,5 @@ const mapStateToProps=(state)=>{
 export default connect(mapStateToProps)(SongDetail);
 
 
-//anytime we update state thru reducers, the connected componenets re-render
+//anytime we update state thru reducers, the connected components re-render
 

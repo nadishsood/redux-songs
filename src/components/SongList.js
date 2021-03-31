@@ -19,7 +19,6 @@ class SongList extends Component{
         });
     }
     render(){
-        
         return <div className="ui divided list">{this.renderList()}</div>
     }
 }
@@ -28,16 +27,12 @@ class SongList extends Component{
 //anytime we run our reducers and change the state, this fn runs with new state object
 
 const mapStateToProps=(state)=>{
-
-    
     return { songs: state.songs};
-
 }
 
 //connect wired to the action creator and this component
 //connect will take the action creator and pass it to this component as props. 
 //if we call this function (the action creator) the returned action will be sent to redux's dispatch function
-
 
 export default connect(mapStateToProps, {
     selectSong: selectSong
@@ -46,4 +41,3 @@ export default connect(mapStateToProps, {
 
 //the object we return from mapStateToProps will show up as props in the 
 //songlist component
-
